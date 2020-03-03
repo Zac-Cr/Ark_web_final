@@ -1,0 +1,247 @@
+/* Basic Color Settings */
+/* Red = #350501 */
+/* off_white = #cecccc*/
+
+body {
+    margin: 0px;
+}
+
+p{
+    margin: 0px;
+}
+
+
+/* Header Styles */
+.header_container {
+    display:flex;
+    justify-content: space-around;
+    height: 125px;
+    background-color: #350501;
+}
+
+.logo_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100%;
+    width: 150px;
+    align-items: center;
+}
+
+
+/* Middle Header */
+.hamburger i{
+  visibility: hidden;
+}
+.middle_header{
+  display: flex;
+  align-items: flex-end;
+}
+.middle_header {
+    width: 50vw;
+    font-size: 1.8em;
+}
+
+.dropdown,
+.dropdown-content {
+  display: none;
+}
+
+.links_wrapper_large a{
+  color: #cecccc;
+  text-decoration: none;
+}
+.links_wrapper_large{
+  width: 100% ;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
+
+
+/* Right Header */
+
+.right_header .eco_friendly{
+    font-size: .6rem;
+    display: flex;
+}
+.right_header .eco_friendly_text{
+    color: #cecccc;
+}
+.right_header img{
+    height: 100%;
+    width: 25px;
+    padding-top: 10px;
+}
+
+.right_header .contactus_button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.right_header .contactus_button a{
+    display: flex;
+    justify-content: space-around;
+    color: #cecccc;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: 13px solid black;
+    background-color: black;
+    border-radius: 25px;
+}
+.mobile_eco_friendly{
+  display: none;
+}
+
+/* Body Styles */
+.body_container{
+    background-color: #cecccc;
+    display: grid;
+    grid-template-columns: .2fr 1fr .2fr;
+  }
+  .middle_column{
+    grid-column: 2;
+    box-shadow: 2px 0px 24px 9px rgba(0,0,0,0.35);
+  }
+  .intro-text{
+    font-size: 1.8rem;
+    padding: 15px;
+  }
+  .intro_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .intro_header h2{
+    font-size: 2rem;
+    margin: 0;
+  }
+  .finished_text{
+    grid-column: 2;
+    font-size: 1.8rem;
+    padding:25px 15px 0 15px;
+  }
+  
+  .contact_us_link{
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 1.4rem;
+    padding: 15px 15px 0 15px;
+  }
+  .contact_us_link a{
+    text-decoration: underline;
+    color: black;
+  
+  }
+  .before_after{
+    grid-column: 2;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  * {box-sizing:border-box}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 2;
+  }
+  
+  /* Hide the images by default */
+  .mySlides1 {
+    display: none;
+  }
+  .mySlides2{
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+
+/* Footer styles */
+
+.footer_container{
+    height: 250px;
+    background-color: #350501; 
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .footer_links a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #cecccc;
+}
+.footer .footerl{
+    padding: 15px;
+}
+.footer_eco_friendly img{
+    height: 100%;
+    width: 350px;
+    align-items: center;
+}
+.footer .footer_logo img{
+    height: 100%;
+    width: 300px;
+    align-items: center;
+}
+/* Social media links */
+.social_media_links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #350501;
+  height: 25px
+}
+.social_media_links i{
+  color: #cecccc;
+  font-size: 1.2rem;
+  opacity: 45%;
+}
