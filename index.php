@@ -1,1 +1,0 @@
-<?php include_once("../code/homepage.html")
