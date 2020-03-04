@@ -84,7 +84,7 @@
             <div class="trailer_proj">
                    <div class="trailer_descrip">
                        <p>
-                            This trailer was used for equipment moving. THe floor was getting ripped apart byt the weight and edges of the equipment.
+                            This trailer was used for equipment moving. The floor was getting ripped apart byt the weight and edges of the equipment.
                             The floor was paved to withstand all the abuse that comes with a heavy worker. No more cuts and liquids on the floor.
                             The ramp was also done to give more traction when the ramp would be a little slippery when loading something wet.Tie down strips were install after the pavement was finished.
                        </p>
@@ -247,7 +247,7 @@
     </div>
 </body>
 <script>
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex,"mySlides", "demo");
 showSlides(slideIndex,"mySlides2", "demo2");
 toggleMenu();
@@ -264,10 +264,10 @@ function currentSlide(n) {
 }
 
 function showSlides(n,name,thumbnail) {
-  var i;
-  var slides = document.getElementsByClassName(name);
-  var dots = document.getElementsByClassName(thumbnail);
-  var captionText = document.getElementById("caption");
+  let i;
+  let slides = document.getElementsByClassName(name);
+  let dots = document.getElementsByClassName(thumbnail);
+  let captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -286,10 +286,10 @@ function toggleMenu() {
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+    let i;
     for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
+      let openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
       }

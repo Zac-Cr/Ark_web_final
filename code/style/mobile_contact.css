@@ -1,3 +1,4 @@
+
 .header_container {
     display:grid;
     grid-template-columns: 10vw 1fr 20vw;
@@ -101,6 +102,11 @@
 }
 .contact_text{
     grid-column: auto;
+}
+
+.contact_info_wrapper p {
+    font-size: .8rem;
+    padding: 2px;
 }
 
 

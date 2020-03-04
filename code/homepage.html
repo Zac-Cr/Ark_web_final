@@ -178,14 +178,14 @@
     </div>
 </body>
 <script>
-    var slideIndex = 0;
+    let slideIndex = 0;
 showSlides();
 showSlides2();
 toggleMenu();
 
 function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides1");
+  let i;
+  let slides = document.getElementsByClassName("mySlides1");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -195,8 +195,8 @@ function showSlides() {
   setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
 function showSlides2() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides2");
+  let i;
+  let slides = document.getElementsByClassName("mySlides2");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -212,10 +212,10 @@ function toggleMenu() {
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+    let i;
     for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
+      let openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
       }
