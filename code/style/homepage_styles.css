@@ -3,11 +3,11 @@
 /* off_white = #cecccc*/
 
 body {
-    margin: 0px;
+    margin: 0;
 }
 
 p{
-    margin: 0px;
+  margin: 0;
 }
 
 
@@ -64,18 +64,24 @@ p{
 
 
 /* Right Header */
+.eco_friendly {
+  display: flex;
+}
 
-.right_header .eco_friendly{
-    font-size: .6rem;
+.right_header .eco_friendly h1{
+    font-size: 1rem;
     display: flex;
 }
 .right_header .eco_friendly_text{
     color: #cecccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .right_header img{
     height: 100%;
     width: 25px;
-    padding-top: 10px;
+    padding-top: 17px;
 }
 
 .right_header .contactus_button{
@@ -112,20 +118,24 @@ p{
   .intro-text{
     font-size: 1.8rem;
     padding: 15px;
+    padding-top: 70px;
+    padding: 35px 0 35px 0;
   }
   .intro_header{
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .intro_header h2{
-    font-size: 2rem;
-    margin: 0;
-  }
-  .finished_text{
-    grid-column: 2;
     font-size: 1.8rem;
-    padding:25px 15px 0 15px;
+  }
+
+  .finished_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2;
+    font-size: 1.5rem;
+    padding:45px 15px 0 15px;
   }
   
   .contact_us_link{

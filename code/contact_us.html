@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
+    <!-- email for the contact links -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,7 +23,7 @@
         <div class="links_wrapper middle_header">
             <div class="dropdown">
                 <div class="hamburger">
-                   <button onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+                   <button onclick="toggleMenu()"><i class="fas fa-bars dropbtn"></i></button>
                 </div>
                 <div id="myDropdown" class="dropdown-content" >
                     <div class="homepage_link">
@@ -93,7 +96,8 @@
                             <p>208-643-5292</p>
                         </div>
                         <div class="email noahemail">
-                            <p>noah.arkrubberpaving@gmail.com</p>
+                            <a href="">noah.arkrubberpaving@gmail.com</a>
+                        
                         </div>
                     </div>
                 </div>
@@ -167,8 +171,20 @@
     </div>
 </body>
 <script>
-toggleMenu()
 function toggleMenu() {
     document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
 }
 </script>

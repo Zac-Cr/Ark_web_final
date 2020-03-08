@@ -103,7 +103,9 @@ p{
 
   .middle_column p {
     font-size: 1.5rem;
-    padding: 15px;
+    padding: 35px;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 /* Footer Style */
 .footer_container{

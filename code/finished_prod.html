@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- crud functins -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,7 +21,7 @@
         <div class="links_wrapper middle_header">
             <div class="dropdown">
                 <div class="hamburger">
-                   <button onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+                   <button onclick="toggleMenu()"><i class="fas fa-bars dropbtn"></i></button>
                 </div>
                 <div id="myDropdown" class="dropdown-content" >
                     <div class="homepage_link">
@@ -250,7 +252,6 @@
 let slideIndex = 1;
 showSlides(slideIndex,"mySlides", "demo");
 showSlides(slideIndex,"mySlides2", "demo2");
-toggleMenu();
 
 // Next/previous controls
 function plusSlides(n, name, thumbnail) {
