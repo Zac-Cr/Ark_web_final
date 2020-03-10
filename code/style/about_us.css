@@ -17,78 +17,106 @@ p{
 
 /* Header Styles */
 .header_container {
-    display:flex;
-    justify-content: space-around;
-    height: 125px;
-    background-color: #350501;
-}
-
-.logo_wrapper {
+    display: grid;
+    grid-template-columns: .2fr 1fr .4fr;
+    background-image: url(../../logos/background.jpg);
+  }
+  
+  .logo_wrapper {
+      display: flex;
+      grid-row: 1;
+      grid-column: 1;
+      align-items: center;
+  }
+  
+  .logo img {
+      height: 100%;
+      width: 150px;
+      align-items: center;
+  }
+  
+  
+  /* Middle Header */
+  .hamburger i{
+    visibility: hidden;
+  }
+  .middle_header{
     display: flex;
-    align-items: center;
-}
-
-.logo img {
-    height: 100%;
-    width: 150px;
-    align-items: center;
-}
-
-
-/* Middle Header */
-.middle_header {
-    width: 50vw;
-    display: flex;
-    justify-content: space-between;
     align-items: flex-end;
-    font-size: 1.8em;
-}
-
-.links_wrapper a{
-    color:#cecccc;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .middle_header {
+      width: 100;
+      font-size: 1.8rem;
+  }
+  
+  .dropdown,
+  .dropdown-content {
+    display: none;
+  }
+  
+  .links_wrapper_large a{
+    color: #cecccc;
     text-decoration: none;
-}
-.links_wrapper_large{
+  }
+  .links_wrapper_large{
     width: 100% ;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
   }
-
-
-
-/* Right Header */
-
-.right_header .eco_friendly{
-    font-size: .6rem;
+  
+  
+  
+  
+  /* Right Header */
+  .contact_us{
+    grid-column: 3;
+    grid-row: 1;
     display: flex;
-}
-.right_header .eco_friendly_text{
-    color: #cecccc;
-}
-.right_header img{
-    height: 100%;
-    width: 25px;
-    padding-top: 10px;
-}
-
-.right_header .contactus_button{
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .eco_friendly {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin-top: 8px;
-}
-
-.right_header .contactus_button a{
-    display: flex;
-    justify-content: space-around;
-    color: #cecccc;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border: 13px solid black;
-    background-color: black;
-    border-radius: 25px;
-}
+    justify-content: center;
+  }
+  
+  .right_header .eco_friendly h1{
+      font-size: 1rem;
+      display: flex;
+  }
+  .right_header .eco_friendly_text{
+      color: #cecccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .right_header img{
+      height: 100%;
+      width: 25px;
+      padding: 4px 0 4px 0;
+  }
+  
+  .right_header .contactus_button{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 8px;
+  }
+  
+  .right_header .contactus_button a{
+      display: flex;
+      justify-content: space-around;
+      color: #cecccc;
+      text-decoration: none;
+      font-size: 1.8rem;
+  }
+  .mobile_eco_friendly{
+    display: none;
+  }
 
 
 .body_container{
@@ -109,42 +137,54 @@ p{
   }
 /* Footer Style */
 .footer_container{
-    height: 250px;
-    background-color: #350501; 
+    background-image: url(../../logos/background.jpg);
 }
 .footer{
-    display: flex;
-    justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
+.footer_links{
+  padding: 20px 0 0 50px;
+}
+.footerl{
+  padding-bottom: 5px;
+}
 .footer .footer_links a{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     text-decoration: none;
     color: #cecccc;
 }
-.footer .footerl{
-    padding: 15px;
-}
+
 .footer_eco_friendly img{
     height: 100%;
-    width: 350px;
+    width: 150px;
     align-items: center;
+    padding-top: 25px;
+}
+.footer_logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 3;
 }
 .footer .footer_logo img{
-    height: 100%;
-    width: 300px;
+    width: 170px;
     align-items: center;
+
 }
 /* Social media links */
 .social_media_links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #350501;
-    height: 25px
-  }
-  .social_media_links i{
-    color: #cecccc;
-    font-size: 1.2rem;
-    opacity: 45%;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  grid-column: 2;
+  grid-row: 1;
+  padding: 35px;
+}
+.social_media_links i{
+  color: #fd0506;
+  font-size: 1.2rem;
+  opacity: 45%;
+}
