@@ -75,25 +75,16 @@
 }
 
 .logo_wrapper img{
-    height: 12vh;
+    height: 14vh;
 }
 .right_header{
     visibility: hidden;
     display: none;
 }
-.mobile_eco_friendly img{
-    height: 5vh;
-}
 .mobile_eco_friendly{
-    font-size: .5rem;
-    display: flex;
-    color: #cecccc;
-    grid-column: 1/4;
-    grid-row: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
 }
+
 
 .body_container{
     display: grid;
@@ -101,22 +92,6 @@
 }
 
 
-
-
-
-.footer{
-    display: flex;
-}
-.footer_links{
-    display: none;
-}
-.footer_container{
-    height: 100%;
-}
-
-.footer_eco_friendly{
-    display:none;
-}
 
 .what_is_ecoraster h1 {
     font-size: 2.5rem;
@@ -167,4 +142,24 @@
 .bloxx_text{
     display: grid;
     grid-template-columns: 1fr;
+}
+
+
+/* footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer_links{
+    display: none;
+}
+.footer_container{
+    height: 100%;
+}
+.social_media_links{
+    padding: 0;
+}
+
+.footer_eco_friendly{
+    display:none;
 }

@@ -136,31 +136,7 @@ p{
     font-size: 1.4rem;
 }
 /* application */
-.agriculture_equestrian h1{
-    padding: 15px;
-    margin: 0px;
-    display: flex;
-    justify-content: space-around;
-    font-size: 3.5rem;
-}
-.ecoraster_equestrain{
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-}
-.equestrian_img{
-    display: flex;
-    justify-content: space-around;
-}
-.equestrian_img img{
-    height: 100%;
-    width: 500px;
-    padding: 10px;
-}
-.equestrian_text{
-    grid-column: 2;
-    padding: 30px;
-    font-size: 1.4rem;
-}
+
 .residential_header h1{
     padding: 15px;
     margin: 0px;
@@ -230,7 +206,7 @@ p{
     align-items: flex-start;
     font-size: 1.3rem;
 }
-.e40_header h2{
+/* .e40_header h2{
     padding: 15px;
     margin: 0px;
     display: flex;
@@ -279,7 +255,7 @@ p{
     justify-content: space-around;
     align-items: flex-start;
     font-size: 1.3rem;
-}
+} */
 .x30_header{
     font-size: 1.2rem;
     display: flex;
@@ -356,6 +332,20 @@ p{
     font-size: 1.3rem;
 }
 
+.ecoraster_end{
+    padding: 15px;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ecoraster_end a{
+    color: black;
+    font-weight: 600;
+
+}
+
 /* Footer Styles */
 .footer_container{
     background-image: url(../../logos/background.jpg);
@@ -369,10 +359,10 @@ p{
   padding: 20px 0 0 50px;
 }
 .footerl{
-  padding-bottom: 5px;
+  padding-bottom: 2px;
 }
 .footer .footer_links a{
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
     color: #cecccc;
 }

@@ -155,10 +155,24 @@ p{
     padding: 5px;
 }
 
+.noah_name{
+  display: flex;
+  align-items: center;
+}
+
+.isaac_name{
+  display: flex;
+  align-items: center;
+}
+
+.garret_name{
+  display: flex;
+  align-items: center;
+}
 .redstripe{
     grid-column: 3;
     grid-row: 1/3;
-    background-color: #350501;
+    background-color: #fd0506;
 }
 .blackstripe{
     grid-column: 5;
@@ -183,10 +197,10 @@ p{
   padding: 20px 0 0 50px;
 }
 .footerl{
-  padding-bottom: 5px;
+  padding-bottom: 2px;
 }
 .footer .footer_links a{
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
     color: #cecccc;
 }
