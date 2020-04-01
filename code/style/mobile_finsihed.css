@@ -2,8 +2,8 @@
     display:grid;
     grid-template-columns: 10vw 1fr 20vw;
     grid-template-rows: 5vh 1fr;
-    background-color: #350501;
-    height: 18vh;
+    background-image: url(../../logos/background.jpg);
+    background-size: cover;
 }
 .middle_header{
     width: 10vw;
@@ -71,7 +71,7 @@
     align-items: center;
     justify-content: center;
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 1/3;
 }
 
 .logo_wrapper img{
@@ -101,7 +101,9 @@
 
 .footer{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
+background-image: url(../../logos/background.jpg);
+    background-size: cover;
 }
 .footer_links{
     display: none;

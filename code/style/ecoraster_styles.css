@@ -20,6 +20,7 @@ p{
     display: grid;
     grid-template-columns: .2fr 1fr .4fr;
     background-image: url(../../logos/background.jpg);
+    
   }
   
   .logo_wrapper {
@@ -30,9 +31,10 @@ p{
   }
   
   .logo img {
-      height: 100%;
-      width: 150px;
-      align-items: center;
+    height: 100%;
+    width: 150px;
+    align-items: center;
+    padding-top: 1px;
   }
   
   
@@ -95,7 +97,6 @@ p{
       justify-content: center;
   }
   .right_header img{
-      height: 100%;
       width: 25px;
       padding: 4px 0 4px 0;
   }
@@ -118,10 +119,17 @@ p{
     display: none;
   }
 /* Body Styles */
+.body_wrapper{
+    display: grid;
+    grid-template-columns: .2fr 1fr .2fr;
+    background-color: #cecccc;
+    
+}
 
 .eco_raster_body {
+    grid-column: 2;
     background-color: #cecccc;
-    height: 100%vh;
+    box-shadow: 2px 0px 24px 9px rgba(0,0,0,0.35);
 }
 
 .what_is_ecoraster h1{
@@ -132,7 +140,7 @@ p{
     font-size: 3.5rem;
 }
 .eco_raster_ex{
-    padding: 30px 55px 5px;
+    padding: 30px 45px 5px;
     font-size: 1.4rem;
 }
 /* application */
@@ -142,26 +150,29 @@ p{
     margin: 0px;
     display: flex;
     justify-content: space-around;
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 .residential_body{
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .residential_img{
     display: flex;
     justify-content: space-around;
     padding: 10px;
+    width: 100%;
 }
 .residential_img img{
-    height: 281.25px;
-    width: 500px;
+    height: 75%;
+    width: 100%;
 }
 
 .residential_text{
     grid-column: 2;
-    padding: 30px;
+    padding: 30px 45px;
     font-size: 1.4rem;
     display: flex;
     align-items: center;
@@ -172,31 +183,34 @@ p{
     margin: 0px;
     display: flex;
     justify-content: space-around;
-    font-size: 3.5rem;
+    font-size: 2.7rem;
 }   
 .eco_raster_prod h2{
     padding: 15px;
     margin: 0px;
     display: flex;
     justify-content: space-around;
-    font-size: 3.5rem;
+    font-size: 2rem;
 }   
 .e50{
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .e50_text{
-    display: grid;
-    grid-template-columns: 2fr .75fr;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .e50_text p{
-    padding: 15px;
+    padding: 15px 45px;
     font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .e50_text ul{
@@ -257,46 +271,25 @@ p{
     font-size: 1.3rem;
 } */
 .x30_header{
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-top: 15px;
 }
 
 .x30_text{
-    display: grid;
-    grid-template-columns: 2fr .75fr;
-    align-items: center;
-}
-
-.x30_text p{
-    padding: 15px;
-    font-size: 1.5rem;
-}
-
-.x30_text ul{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    font-size: 1.3rem;
-}
-.x30_header{
-    font-size: 1.2rem;
-    display: flex;
     align-items: center;
-    justify-content: space-around;
-}
-
-.x30_text{
-    display: grid;
-    grid-template-columns: 2fr .75fr;
-    align-items: center;
+    justify-content: center;
 }
 
 .x30_text p{
-    padding: 15px;
+    padding: 15px 45px;
     font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .x30_text ul{
@@ -311,16 +304,18 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-top: 15px;
 }
 
 .bloxx_text{
-    display: grid;
-    grid-template-columns: 2fr .75fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .bloxx_text p{
-    padding: 15px;
+    padding: 15px 45px;
     font-size: 1.5rem;
 }
 
@@ -333,7 +328,7 @@ p{
 }
 
 .ecoraster_end{
-    padding: 15px;
+    padding: 45px 45px 15px 45px;
     font-size: 1.3rem;
     display: flex;
     justify-content: center;
@@ -349,6 +344,7 @@ p{
 /* Footer Styles */
 .footer_container{
     background-image: url(../../logos/background.jpg);
+    
 }
 .footer{
   display: grid;
@@ -382,13 +378,12 @@ p{
 .footer .footer_logo img{
     width: 170px;
     align-items: center;
-
+    padding-bottom: 20px;
 }
 /* Social media links */
 .social_media_links{
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 25px;
   grid-column: 2;
   grid-row: 1;

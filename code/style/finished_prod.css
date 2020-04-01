@@ -4,9 +4,16 @@ body {
 
 p{
     margin: 0px;
+    line-height: 30px;
 }
 .dropdown{
   display: none;
+}
+
+h4{
+  margin: 0;
+  padding-top: 42px;
+  font-size: 2.0rem;
 }
 
 .mobile_eco_friendly{
@@ -19,6 +26,7 @@ p{
   display: grid;
   grid-template-columns: .2fr 1fr .4fr;
   background-image: url(../../logos/background.jpg);
+  
 }
 
 .logo_wrapper {
@@ -29,9 +37,10 @@ p{
 }
 
 .logo img {
-    height: 100%;
-    width: 150px;
-    align-items: center;
+  height: 100%;
+  width: 150px;
+  align-items: center;
+  padding-top: 1px;
 }
 
 
@@ -94,7 +103,6 @@ p{
     justify-content: center;
 }
 .right_header img{
-    height: 100%;
     width: 25px;
     padding: 4px 0 4px 0;
 }
@@ -116,7 +124,6 @@ p{
 .mobile_eco_friendly{
   display: none;
 }
-
 /* BodyStyles */
 .body_container{
   background-color: #cecccc;
@@ -131,6 +138,7 @@ p{
   box-sizing: border-box;
 }
 
+
 .trailer_proj{
   display: flex;
   flex-direction: column;
@@ -139,7 +147,11 @@ p{
 }
 .trailer_descrip p{
  font-size: 1.5rem;
- padding: 15px;
+ padding: 35px;
+}
+
+.walkway_heading{
+  padding: 45px 0 25px 0;
 }
 .walkway_proj{
   display: flex;
@@ -149,11 +161,14 @@ p{
 }
 .walkway_descrip{
  font-size: 1.5rem;
- padding: 15px;
+ padding: 35px;
 }
 .facebook_link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.5rem;
-  padding: 15px;
+  padding: 35px;
 }
 .facebook_link a{
   text-decoration: underline;
@@ -237,9 +252,7 @@ p{
 
 /* Container for image text */
 .row{
-display: flex;
-justify-content: center;
-align-items: center;
+display: none
 }
 
 .row:after {
@@ -272,6 +285,7 @@ align-items: center;
 /* Footer Style */
 .footer_container{
   background-image: url(../../logos/background.jpg);
+  
 }
 .footer{
 display: grid;
@@ -305,13 +319,12 @@ grid-column: 3;
 .footer .footer_logo img{
   width: 170px;
   align-items: center;
-
+  padding-bottom: 20px;
 }
 /* Social media links */
 .social_media_links{
 display: flex;
 justify-content: center;
-align-items: center;
 height: 25px;
 grid-column: 2;
 grid-row: 1;
