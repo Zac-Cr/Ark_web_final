@@ -147,6 +147,44 @@
                         </div>
                     </div>
                 </div>
+                <div class="mobile_pictures">
+                    <p>Click picture to view more</p>
+                    <div class="mobile_row">
+                        <div class="mobile_column">
+                          <img src="../Pictures/Before_after/trailer/trailer_perspect.jpeg" onclick="openModal();currentSlide_mobile(1)" class="hover-shadow">
+                        </div>
+                      
+                      <!-- The Modal/Lightbox -->
+                      <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                      
+                          <div class="mobile_mySlides">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="../Pictures/Before_after/trailer/trailer_perspect.jpeg">
+                          </div>
+                      
+                          <div class="mobile_mySlides">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="../Pictures/Before_after/trailer/trailer_before.jpeg">
+                          </div>
+                      
+                          <div class="mobile_mySlides">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="../Pictures/Before_after/trailer/trailer_after.jpeg">
+                          </div>
+                      
+                          <div class="mobile_mySlides">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="../Pictures/Before_after/trailer/trailer_step.jpeg">
+                          </div>
+                      
+                          <!-- Next/previous controls -->
+                          <a class="mobile_prev" onclick="plusSlides_mobile(-1)">&#10094;</a>
+                          <a class="mobile_next" onclick="plusSlides_mobile(1)">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="walkway_proj">
                 <div class="walkway_heading">
@@ -227,6 +265,9 @@
                     <a href="https://www.facebook.com/arkrubberpaving/?ref=br_rs">Facebook Page</a>
                 </p>
             </div>
+        </div>
+
+       
         </div>
     </div>
     <!-- footer -->
@@ -311,4 +352,49 @@ window.onclick = function(event) {
     }
   }
 }
+// mobile JS
+openModal()
+closeModal()
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex_mobile = 1;
+showSlides_mobile(slideIndex_mobile);
+
+// Next/previous controls
+function plusSlides_mobile(n) {
+  showSlides_mobile(slideIndex_mobile += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides_mobile(slideIndex_mobile = n);
+}
+
+function showSlides_mobile(n) {
+  var i;
+  var slides = document.getElementsByClassName("mobile_mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex_mobile = 1}
+  if (n < 1) {slideIndex_mobile = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex_mobile-1].style.display = "block";
+  dots[slideIndex_mobile-1].className += " active";
+  captionText.innerHTML = dots[slideIndex_mobile-1].alt;
+}
+
+
 </script>
