@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Expires" content="-1">
-    <meta http-equiv="Cache-Control" content="no-cache ,must-revalidate" />
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
     <title>Ark Rubber Paving</title>
     <link rel="stylesheet" href="style/homepage_styles.css">
     <!-- favicon -->
@@ -44,9 +46,9 @@
                     <div class="about_us">
                         <a href="about_us.html">About Us</a>
                     </div>
-                    <div class="products">
+                    <!-- <div class="products">
                         <a href="products.html">Products</a>
-                    </div>
+                    </div> -->
                     <div class="contact_us">
                         <a href="contact_us.html">Contact Us</a>
                     </div>
@@ -65,9 +67,9 @@
                 <div class="about_us">
                     <a href="about_us.html">About Us</a>
                 </div>
-                <div class="product_links">
+                <!-- <div class="product_links">
                     <a href="products.html">Products</a>
-                </div>
+                </div> -->
             </div>
         </div>
         
@@ -190,9 +192,9 @@
                     <div class="about_us footerl">
                         <a href="about_us.html">About Us</a>
                     </div>
-                    <div class="product_page footer1">
+                    <!-- <div class="product_page footer1">
                         <a href="products.html">Products</a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="footer_logo">
                     <img src="../logos/white_100ppi.png" alt="Footer Logo">  
@@ -209,7 +211,6 @@
 <script>
     let slideIndex = 0;
 showSlides();
-showSlides2();
 toggleMenu();
 
 function showSlides() {
@@ -222,22 +223,11 @@ function showSlides() {
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 4000); // Change image every 4 seconds
-}
-function showSlides2() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides2");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 4000); // Change image every 4 seconds
-}
+};
 
 function toggleMenu() {
     document.getElementById("myDropdown").classList.toggle("show");
-}
+};
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
 
@@ -250,6 +240,6 @@ window.onclick = function(event) {
       }
     }
   }
-}
+};
 </script>
 </html>

@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Expires" content="-1">
-    <meta http-equiv="Cache-Control" content="no-cache ,must-revalidate" />
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
     <title>Ark Rubber Paving</title>
     <link rel="stylesheet" href="style/finished_prod.css">   
     <link rel="stylesheet" media="screen and (max-width: 1030px)" href="style/mobile_finsihed.css" />
@@ -38,9 +40,9 @@
                     <div class="about_us">
                         <a href="about_us.html">About Us</a>
                     </div>
-                    <div class="products">
+                    <!-- <div class="products">
                         <a href="products.html">Products</a>
-                    </div>
+                    </div> -->
                     <div class="contact_us">
                         <a href="contact_us.html">Contact Us</a>
                     </div>
@@ -59,9 +61,9 @@
                 <div class="about_us">
                     <a href="about_us.html">About Us</a>
                 </div>
-                <div class="product_links">
+                <!-- <div class="product_links">
                     <a href="products.html">Products</a>
-                </div>
+                </div> -->
             </div>
         </div>
         
@@ -91,13 +93,14 @@
     
     <div class="body_container">
         <div class="middle_column">
+            <h1>Finished Projects</h1>
             <div class="trailer_proj">
                 <div class="trailer_heading">
                     <h4>Trailer Resurfacing</h4>
                 </div>
                    <div class="trailer_descrip">
                        <p>
-                            This trailer was used for equipment moving. The floor was getting ripped apart byt the weight and edges of the equipment.
+                            This trailer was used for equipment moving. The floor was getting ripped apart by the weight and edges of the equipment.
                             The floor was paved to withstand all the abuse that comes with a heavy worker. No more cuts and liquids on the floor.
                             The ramp was also done to give more traction when the ramp would be a little slippery when loading something wet.Tie down strips were install after the pavement was finished.
                        </p>
@@ -107,19 +110,19 @@
                     <!-- Full-width images with number text -->
                     <div class="mySlides">
                         <div class="numbertext"></div>
-                            <img src="../Pictures/Before_after/trailer/trailer_perspect.jpeg" style="width:100%">                        
+                            <img src="../Pictures/Before_after/trailer/trailer_perspect.jpeg" >                        
                     </div>
                     <div class="mySlides">
                         <div class="numbertext"></div>
-                            <img src="../Pictures/Before_after/trailer/trailer_before.jpeg" style="width:100%">                        
+                            <img src="../Pictures/Before_after/trailer/trailer_before.jpeg" >                        
                     </div>
                     <div class="mySlides">
                         <div class="numbertext"></div>
-                            <img src="../Pictures/Before_after/trailer/trailer_after.jpeg" style="width:100%">                        
+                            <img src="../Pictures/Before_after/trailer/trailer_after.jpeg" >                        
                     </div>
                     <div class="mySlides">
                         <div class="numbertext"></div>
-                            <img src="../Pictures/Before_after/trailer/trailer_step.jpeg" style="width:100%">
+                            <img src="../Pictures/Before_after/trailer/trailer_step.jpeg" >
                     </div>
                     <div class="next_buttons">
                         <!-- Next and previous buttons -->
@@ -151,12 +154,12 @@
                     <p>Click picture to view more</p>
                     <div class="mobile_row">
                         <div class="mobile_column">
-                          <img src="../Pictures/Before_after/trailer/trailer_perspect.jpeg" onclick="openModal();currentSlide_mobile(1)" class="hover-shadow">
+                          <img src="../Pictures/Before_after/trailer/trailer_perspect.jpeg" onclick="openModal('myModal');currentSlide_mobile(1, 'mobile_mySlides')" class="hover-shadow">
                         </div>
                       
                       <!-- The Modal/Lightbox -->
                       <div id="myModal" class="modal">
-                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <span class="close cursor" onclick="closeModal('myModal')">&times;</span>
                         <div class="modal-content">
                       
                           <div class="mobile_mySlides">
@@ -180,8 +183,8 @@
                           </div>
                       
                           <!-- Next/previous controls -->
-                          <a class="mobile_prev" onclick="plusSlides_mobile(-1)">&#10094;</a>
-                          <a class="mobile_next" onclick="plusSlides_mobile(1)">&#10095;</a>
+                          <a class="mobile_prev" onclick="plusSlides_mobile(-1,'mobile_mySlides')">&#10094;</a>
+                          <a class="mobile_next" onclick="plusSlides_mobile(1, 'mobile_mySlides')">&#10095;</a>
                         </div>
                     </div>
                 </div>
@@ -255,6 +258,52 @@
                         </div>
                     </div>
                 </div>
+                <div class="mobile_pictures">
+                    <p>Click picture to view more</p>
+                    <div class="mobile_row">
+                        <div class="mobile_column">
+                          <img src="../Pictures/Before_after/walkway/walkway_before.jpeg" onclick="openModal('myModal2');currentSlide_mobile(1, 'mobile_mySlides2')" class="hover-shadow">
+                        </div>
+                      
+                      <!-- The Modal/Lightbox -->
+                      <div id="myModal2" class="modal">
+                        <span class="close cursor" onclick="closeModal('myModal2')">&times;</span>
+                        <div class="modal-content">
+                      
+                          <div class="mobile_mySlides2">
+                            <div class="numbertext">1 / 6</div>
+                            <img src="../Pictures/Before_after/walkway/walkway_before.jpeg">
+                          </div>
+                      
+                          <div class="mobile_mySlides2">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="../Pictures/Before_after/walkway/walkway_after.jpeg">
+                          </div>
+                      
+                          <div class="mobile_mySlides2">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="../Pictures/Before_after/walkway/walkway_perspective.jpeg">
+                          </div>
+                      
+                          <div class="mobile_mySlides2">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="../Pictures/Before_after/walkway/walkway_pers_after.jpeg">
+                          </div>
+                          <div class="mobile_mySlides2">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="../Pictures/Before_after/walkway/stairs_before.jpeg">
+                          </div>
+                          <div class="mobile_mySlides2">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="../Pictures/Before_after/walkway/stairs_after.jpeg">
+                          </div>
+                      
+                          <!-- Next/previous controls -->
+                          <a class="mobile_prev2" onclick="plusSlides_mobile(-1, 'mobile_mySlides2')">&#10094;</a>
+                          <a class="mobile_next2" onclick="plusSlides_mobile(1,'mobile_mySlides2')">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="shed_proj">
 
@@ -266,7 +315,7 @@
                 </p>
             </div>
         </div>
-
+        </div>
        
         </div>
     </div>
@@ -287,9 +336,9 @@
                     <div class="about_us footerl">
                         <a href="about_us.html">About Us</a>
                     </div>
-                    <div class="product_page footer1">
+                    <!-- <div class="product_page footer1">
                         <a href="products.html">Products</a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="footer_logo">
                     <img src="../logos/white_100ppi.png" alt="Footer Logo">  
@@ -353,34 +402,34 @@ window.onclick = function(event) {
   }
 }
 // mobile JS
-openModal()
-closeModal()
+
 // Open the Modal
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
+function openModal(name) {
+  document.getElementById(name).style.display = "block";
 }
 
 // Close the Modal
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
+function closeModal(name) {
+  document.getElementById(name).style.display = "none";
 }
 
 var slideIndex_mobile = 1;
-showSlides_mobile(slideIndex_mobile);
+showSlides_mobile(slideIndex_mobile,"mobile_mySlides");
+showSlides_mobile(slideIndex_mobile, "mobile_mySlides2");
 
 // Next/previous controls
-function plusSlides_mobile(n) {
-  showSlides_mobile(slideIndex_mobile += n);
+function plusSlides_mobile(n, name) {
+  showSlides_mobile(slideIndex_mobile += n, name);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
-  showSlides_mobile(slideIndex_mobile = n);
+function currentSlide_mobile(n,name) {
+  showSlides_mobile(slideIndex_mobile = n,name);
 }
 
-function showSlides_mobile(n) {
+function showSlides_mobile(n,name) {
   var i;
-  var slides = document.getElementsByClassName("mobile_mySlides");
+  var slides = document.getElementsByClassName(name);
   var dots = document.getElementsByClassName("demo");
   var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex_mobile = 1}

@@ -42,7 +42,7 @@ h4{
   
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
-    display: block;
+    display: none;
     position: absolute;
     background-color: #cecccc;
     min-width: 160px;
@@ -67,10 +67,39 @@ h4{
 } */
 
 .show_fin{
-    transition-property: all;
-    transition-duration: .3s;
-    opacity: 100;
+    display: block;
+    animation: fadeIn ease .2s;
+    -webkit-animation: fadeIn ease .2s;
+    -moz-animation: fadeIn ease .2s;
+    -o-animation: fadeIn ease .2s;
+    -ms-animation: fadeIn ease .2s;
+    animation-fill-mode: forwards;
+
 }
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
 
 .logo_wrapper{
     display: flex;
@@ -135,7 +164,7 @@ h4{
   
   /* The Modal (background) */
 .modal {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items:center;
     position: fixed;
@@ -184,13 +213,16 @@ h4{
 }
   
   /* Hide the slides by default */
-.mobile_mySlides {
+.mobile_mySlides,
+.mobile_mySlides2 {
     display: none;
 }
   
   /* Next & previous buttons */
 .mobile_prev,
-.mobile_next {
+.mobile_next,
+.mobile_prev2,
+.mobile_next2 {
     cursor: pointer;
     position: absolute;
     width: auto;
@@ -205,18 +237,22 @@ h4{
 }
   
   /* Position the "next button" to the right */
-.mobile_next {
+.mobile_next,
+.mobile_next2 {
     right:-5.2%;
     border-radius: 3px 0 0 3px;
 }
-.mobile_prev{
+.mobile_prev,
+.mobile_prev2{
     left: -5.5%;
     border-radius: 3px 0 0 3px;
 }
   
   /* On hover, add a black background color with a little bit see-through */
 .mobile_prev:hover,
-.mobile_next:hover {
+.mobile_next:hover,
+.mobile_prev2:hover,
+.mobile_next2:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
