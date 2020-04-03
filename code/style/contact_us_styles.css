@@ -138,9 +138,9 @@ p{
 .contact_us_header h1{
     margin: 0px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 25px;
+    text-align: center;
+    padding: 35px;
+    font-size: 3.5rem;
 }
 .contact_info_wrapper{
     grid-column: 2;

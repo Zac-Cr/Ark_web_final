@@ -138,6 +138,7 @@ text-align: center
 .middle_column h1{
   font-size: 3.5rem;
   margin: 0;
+  padding: 35px;
 }
 * {
 box-sizing: border-box;

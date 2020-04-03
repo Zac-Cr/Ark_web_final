@@ -133,17 +133,16 @@ p{
   .middle_column h1{
     font-size: 3.5rem;
     text-align: center;
+    padding: 35px;
+    margin: 0;
   }
   .middle_column p {
     font-size: 1.5rem;
     padding: 35px;
-    padding-top: 70px;
-    padding-bottom: 70px;
   }
 /* Footer Style */
 .footer_container{
     background-image: url(../../logos/background.jpg);
-    background-size: cover;
     
 }
 .footer{
